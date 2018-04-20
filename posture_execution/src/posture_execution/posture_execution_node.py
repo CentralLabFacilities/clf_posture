@@ -4,7 +4,7 @@ import rospy
 import time
 
 from optparse import OptionParser
-from posture_execution import PostureExecution
+from posture_execution.posture_execution import PostureExecution
 from posture_execution_msgs.srv import *
 
 if __name__ == "__main__":

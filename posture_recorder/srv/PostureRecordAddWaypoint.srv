@@ -1,0 +1,5 @@
+posture_recorder/PostureRecordWaypoint waypoint
+---
+posture_recorder/PostureRecordErrorCodes error_code
+float64 overall_time_from_start
+uint32[]  waypoint_count

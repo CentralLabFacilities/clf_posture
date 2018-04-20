@@ -1,0 +1,3 @@
+string  posture_name
+---
+posture_recorder/PostureRecordErrorCodes error_code

@@ -36,7 +36,7 @@ class PostureExecution(object):
             print("rospy.init_node() has already been called with different arguments:")
 
         self._name = name
-        self._prefix = "roscontrol"
+        self._prefix = "meka_roscontrol"
         self._client = {}
         self._movement_finished = {}
         self._posture = Posture("mypostures")

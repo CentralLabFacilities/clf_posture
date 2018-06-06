@@ -116,7 +116,7 @@ class PostureExecution(object):
                     self.rescale_time_from_start(goal, timescale)
 
                 if group_name not in self._client:
-                    rospy.logerr("Action client for %s not initialized. Trying to initialize it...", group_name)
+                    rospy.loginfo("Action client for %s not initialized. Trying to initialize it...", group_name)
                     try:
                         self._set_up_action_client(group_name)
                     except:

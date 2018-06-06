@@ -367,6 +367,33 @@ left_hand:
         secs: 1
       velocities: []
 
+  close:
+    header:
+      frame_id: ''
+      seq: 0
+      stamp:
+        nsecs: 0
+        secs: 0
+    joint_names:
+    - left_hand_j0
+    - left_hand_j1
+    - left_hand_j2
+    - left_hand_j3
+    - left_hand_j4
+    points:
+    - accelerations: []
+      effort: []
+      positions:
+      - 1.9
+      - 2.5
+      - 4.0
+      - 4.0
+      - 4.0
+      time_from_start:
+        nsecs: 500000000
+        secs: 1
+      velocities: []
+
   right_arm_hand_over_retreat:
     header:
       frame_id: ''

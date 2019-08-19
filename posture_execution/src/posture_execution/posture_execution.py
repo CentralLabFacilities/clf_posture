@@ -41,6 +41,7 @@ class PostureExecution(object):
         self._movement_finished = {}
         self._posture = Posture("mypostures")
         self.all_done = True;
+        self.failed = True;
         self._posture_when_done = "waiting"
 
         threading.Thread(None, rospy.spin)
@@ -69,7 +70,8 @@ class PostureExecution(object):
 
     def on_done(self, group_name, *cbargs):
         msg = cbargs[1]
-        #if msg.error_code == 0:
+        if msg.error_code != 0:
+            self.failed = True;
         self._movement_finished[group_name] = True
         all_finished = True
         for name in self._movement_finished:
@@ -124,6 +126,7 @@ class PostureExecution(object):
                         return False
 
                 self._movement_finished[group_name] = False
+                self.failed = False;
                 self._client[group_name].send_goal(goal, done_cb=partial(self.on_done, group_name))
                 self.all_done = False;
             else:

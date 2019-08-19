@@ -904,10 +904,10 @@ right_hand:
       effort: []
       positions:
       - 1.5
-      - 0.0
-      - 0.0
-      - 0.0
-      - 0.0
+      - 0.01
+      - 0.01
+      - 0.01
+      - 0.01
       time_from_start:
         nsecs: 0
         secs: 2
@@ -929,11 +929,11 @@ right_hand:
     - accelerations: []
       effort: []
       positions:
-      - 1.98
-      - 0.5
-      - 1.0
-      - 1.0
-      - 1.0
+      - 1.7
+      - 0.1
+      - 1.5
+      - 1.5
+      - 1.5
       time_from_start:
         nsecs: 0
         secs: 2
@@ -955,11 +955,11 @@ right_hand:
     - accelerations: []
       effort: []
       positions:
-      - 1.98
-      - 2.5
-      - 4.4
-      - 4.4
-      - 4.5
+      - 1.7
+      - 2.6
+      - 4.9
+      - 4.9
+      - 4.9
       time_from_start:
         nsecs: 000000000
         secs: 2

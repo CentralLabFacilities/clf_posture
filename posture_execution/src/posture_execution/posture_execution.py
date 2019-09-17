@@ -70,7 +70,7 @@ class PostureExecution(object):
 
     def on_done(self, group_name, *cbargs):
         msg = cbargs[1]
-        if msg.error_code != 0:
+        if msg != None and msg.error_code != 0:
             self.failed = True;
         self._movement_finished[group_name] = True
         all_finished = True
